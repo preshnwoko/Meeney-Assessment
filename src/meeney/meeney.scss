@@ -1,0 +1,644 @@
+.body{
+    // max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #F3F3F3;
+    .feed{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        .container{
+            display: flex;
+            max-width: 85%;
+            min-width: 85%;
+            margin: auto;
+            justify-content: space-between;
+            .left{
+                flex-basis: 15%;
+                .first{
+                    padding: 10px;
+                    background: white;
+                    border-radius: 10px;
+                    .firstTitle{
+                        color: #490057;
+                        text-align: center;
+                    }
+                    .switchOptions{
+                        margin-top: 15px;
+                        display: flex;
+                        color: white;
+                        border-bottom-left-radius: 10px;
+                        .switchOption{
+                            background: #B8B8B8;
+                            min-width: 115px;
+                            text-align: center;
+                            padding: 10px 15px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+
+                        }
+                        .one{
+                            border-bottom-left-radius: 7px;
+                            position: relative;
+                            span{
+                                width: 26px;
+                                height: 26px;
+                                border-radius: 50%;
+                                background: #FBB03B;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                left: -5px;
+                                top: -10px;
+                                font-size: 10px;
+                            }
+                        }
+                        .two{
+                            border-bottom-right-radius: 7px;
+                            position: relative;
+                            span{
+                                width: 26px;
+                                height: 26px;
+                                border-radius: 50%;
+                                background: #FBB03B;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                right: -5px;
+                                top: -10px;
+                                font-size: 10px;
+                            }
+                        }
+                        .active{
+                            background: #490057;
+                        }
+                    }
+                }
+                .feedNav{
+                    padding: 10px 15px;
+                    background: #490057;
+                    color: white;
+                    border-radius: 16px;
+                    margin-top: 15px;
+                    ul{
+                        li{
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                            &:hover{
+                                color: #FBB03B;
+                                cursor: pointer;
+                            }
+                            svg{
+                                width: 28px;
+                            }
+                            span{
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                }
+                .myPages{
+                    margin-top: 35px;
+                    background: white;
+                    border-radius: 12px;
+                    padding-bottom: 25px;
+                    .header{
+                        padding: 15px;
+                        .titles{
+                            display: flex;
+                            align-items: center;
+                            h3{
+                                color: #490057;
+                            }
+                            .button{
+                                // flex-basis: 35%;
+                                margin-left: auto;
+                                background: #490057;
+                                display: flex;
+                                padding: 5px;
+                                border-radius: 15px;
+                                color: white;
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                                span{
+                                    font-size: 10px;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        .search{
+                            background: #D5D5D5;
+                            display: flex;
+                            padding: 5px;
+                            margin-top: 10px;
+                            align-items: center;
+                            border-radius: 10px;
+                            svg{
+                                width: 10px;
+                                height: 10px;
+                            }
+                            input{
+                                border: none;
+                                outline: none;
+                                background: none;
+                                height: 20px;
+                                flex-basis: 90%;
+                                margin-left: 10px;
+                            }
+                        } 
+                    }
+                    .pages{
+                        max-height: 200px;
+                        overflow-y: scroll;
+                        .page{
+                            padding: 5px 10px;
+                            background: #F3F3F3;
+                            display: flex;
+                            margin-top: 10px;
+                            align-items: center;
+                            .pageName{
+                                line-height: 1;
+                                margin-left: 10px;
+                                p{
+                                    font-size: 15px;
+                                    color: #490057;
+                                    font-weight: bold;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                                span{
+                                    font-size: 10px;
+                                }
+                            }
+                            .actionButtons{
+                                display: block;
+                                margin-left: auto;
+                                position: relative;
+                                svg{
+                                    width: 100%;
+                                    margin-top: 5px;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                                .dropdown{
+                                    position: absolute;
+                                    background: white;
+                                    width: 90px;
+                                    top: 20px;
+                                    left: -60px;
+                                    z-index: 999;
+                                    box-shadow: 0px 4px 8px #00000021;
+                                    p{
+                                        display: flex;
+                                        align-items: center;
+                                        margin-top: 2px;
+                                        font-size: 12px;
+                                        padding: 2px;
+                                        span{
+                                            padding-left: 5px;
+                                        }
+                                        &:hover{
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .center{
+                flex-basis: 57%;
+                height: 80vh;
+                overflow-y: scroll;
+                .firstSection{
+                    .tabs{
+                        display: flex;
+                        .tab{
+                            flex-basis: 33.334%;
+                            padding: 5px 0px;
+                            border-bottom: 1px solid black;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                            p{
+                                text-align: center;
+                                color: #9B9B9B;
+                                font-size: 20px;
+                            }
+                        }
+                        .active{
+                            border-bottom: 4px solid #490057;
+                            p{
+                                color: #490057;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .tabView{
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px 30px;
+                        background: #9400B11C;
+                        .profileDetails{
+                            flex-basis: 60%;
+                            display: flex;
+                            .img{
+                                width: 125px;
+                                height: 125px;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .profileParagraps{
+                                margin-left: auto;
+                                flex-basis: 70%;
+                                h1{
+                                    font-size: 40px;
+                                    color: #490057;
+                                }
+                                p{
+                                    color: #787878;
+                                    font-size: 20px;
+                                }
+                                p.bio{
+                                    margin-top: 10px;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        .profileStats{
+                            flex-basis: 35%;
+                            .count{
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                .countDiv{
+                                    h3{
+                                        font-size: 18px;
+                                        color: #490057;
+                                    }
+                                    p{
+                                        font-size: 10px;
+                                        text-align: center;
+                                        color: #787878;
+                                    }
+                                }
+                            }
+                            .button{
+                                background: #490057;
+                                color: white;
+                                text-align: center;
+                                width: 120px;
+                                padding: 8px 20px;
+                                border-radius: 16px;
+                                margin-top: 15px;
+                                p{
+                                    font-size: 10px;
+                                }
+                            }
+                            ul{
+                                list-style-type: none;
+                                margin-top: 15px;
+                                h4{
+                                    font-size: 10px;
+                                    color: #490057;
+                                }
+                                li{
+                                    font-size: 10px;
+                                    color: #490057;
+                                }
+                            }
+                        }
+                    }
+                }
+                .newPost{
+                    padding: 30px;
+                    background: white;
+                    margin-top: 20px;
+                    .top{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        input{
+                            width: 85%;
+                            padding: 12px 25px;
+                            border-radius: 16px;
+                            border: 1px solid black;
+                            color: #490057;
+                            &::placeholder{
+                                color: #490057;
+                                font-weight: bold;
+                            }
+                            &:focus, :focus-within{
+                                border: 1px solid #490057;
+                                outline: 2px solid #490057;
+                            }
+                        }
+                    }
+                    .bottom{
+                        display: flex;
+                        width: 50%;
+                        justify-content: space-between;
+                        margin-top: 40px;
+                        .postOptions{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+                .posts{
+                    margin-top: 25px;
+                    .post{
+                        position: relative;
+                        margin-top: 10px;
+                        display: flex;
+                        padding: 20px;
+                        background: white;
+                        justify-content: space-between;
+                        .postImage{
+                            flex-basis: 45%;
+                        }
+                        .postDetails{
+                            flex-basis: 45%;
+                            .top{
+                                display: flex;
+                                align-items: center;
+                                .right{
+                                    flex-basis: 70%;
+                                    .rightBottom{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        p{
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                            }
+                            .postText{
+                                font-size: 15px;
+                                margin-top: 25px;
+                            }
+                            .commentSection{
+                                display: flex;
+                                .section{
+                                    flex-basis: 95%;
+                                    margin-left: auto;
+                                    h6{
+                                        color: #787878;
+                                        margin-top: 10px;
+                                        margin-bottom: 10px;
+                                        
+                                    }
+                                    .sectionTop{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        .sectionRight{
+                                            flex-basis: 85%;
+                                            margin-left: auto;
+                                            h6{
+                                                font-size: 16px;
+                                                color: #490057;
+                                                margin-bottom: 0px;
+                                                margin-top: 0px;
+                                            }
+                                            p{
+                                                font-size: 10px;
+                                            }
+                                            .sectionPostText{
+                                                margin-top: 10px;
+                                                p{
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .postActions{
+                                margin-top: 20px;
+                                display: flex;
+                                width: 100%;
+                                .left{
+                                    display: flex;
+                                    flex-basis: 35%;
+                                    justify-content: space-between;
+                                    svg{
+                                        margin-left: 0!important;
+                                    }
+                                }
+                                svg{
+                                    margin-left: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+                
+            .right{
+                flex-basis: 18%;
+                h3{
+                    color: #490057;
+                }
+                .listings{
+                    background: #E8D8EC;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    height: 300px;
+                    overflow-y: scroll;
+                    .listing{
+                        display: flex;
+                        margin-bottom: 10px;
+                        .orderDetails{
+                            flex-basis: 78%;
+                            margin-left: auto;
+                            .top{
+                                display: flex;
+                                flex-basis: 100%;
+                                align-items: center;
+                                .button{
+                                    margin-left: auto;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                                .details{
+                                    p{
+                                        font-size: 10px;
+                                        color: #787878;
+                                    }
+                                }
+                            }
+                            .bottom{
+                                font-size: 10px;
+                                color: #787878;
+                                flex-basis: 100%;
+                                margin-top: 5px;
+                                .loadingDiv{
+                                    background: #9B9B9B3B;
+                                    width: 100%;
+                                    height: 10px;
+                                    border-radius: 135px;
+                                    display: flex;
+                                    .loading{
+                                        flex-basis: 70%;
+                                        background: #FBB03B;
+                                        border-radius: 135px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .suggestions{
+                    margin-top: 35px;
+                    .tabs{
+                        display: flex;
+                        div{
+                            flex-basis: 50%;
+                            border-bottom: 1px solid black;
+                            padding: 5px 0px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+
+                            p{
+                                font-size: 14px;
+                                color: #490057;
+                            }
+                        }
+                        .suggestedPages{
+                            p{
+                                text-align: right;
+                            }
+                        }
+                        .active{
+                            border-bottom: 4px solid #490057!important;
+                            p{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .tabView{
+                        .page{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 5px 0px;
+                            div{
+                                display: flex;
+                                align-items: center;
+                                .img{
+                                    width: 47px;
+                                    height: 47px;
+                                    margin-right: 10px;
+                                }
+                                div{
+                                    display: block;
+                                    h4{
+                                        font-size: 14px;
+                                    }
+                                    p{
+                                        font-size: 10px;
+                                    }
+                                }
+                                
+                            }
+                            .left{
+                                flex-basis: 57%
+                            }
+                            .right{
+                                flex-basis: 38%;
+                                .button:hover{
+                                    cursor: pointer;
+                                }
+                                svg:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1300px) and (max-width:1600px) {
+    .container{
+        max-width: 95%!important;
+        min-width: 95%!important;
+    }
+    .body .feed .container .center .firstSection .tabView .profileDetails .img{
+        max-width: 100px!important;
+    }
+    .profileParagraps h1{
+        font-size: 35px!important;
+    }
+    p.username{
+        font-size: 15px!important;
+    }
+    .orderDetails{
+        flex-basis: 72%!important;
+    }
+    .suggestedPages p, .users p{
+        font-size: 12px!important;
+    }
+    .page div .img{
+        width: 30px!important;
+        height: 30px!important;
+        img{
+            width: 100%;
+        }
+    }
+    .page .left{
+
+    }
+    .page .right{
+        flex-basis: 41%!important;
+    }
+    .page .right .button{
+        padding: 5px 10px;
+        span{
+            font-size: 10px!important;
+        }
+    }
+    .listings{
+        padding: 8px;
+    }
+    .page div div h4{
+        font-size: 12px!important;
+    }
+    .post .postImage img{
+        width: 100%!important;
+    }
+    .sectionTop{
+        display: none!important;
+    }
+    .postImage{
+        flex-basis: 50%!important;
+        img{
+            width: 100%;
+        }
+    }
+    .postDetails .postText{
+        margin-top: 15px!important;
+    }
+    .postDetails .top .right{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,192 @@
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: transparent linear-gradient(267deg, #A303A0 0%, #490057 100%) 0% 0% no-repeat padding-box;
+  height: 17vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-radius: 0px 0px 35px 35px;
+}
+
+.navContainer .circleOne {
+  background: transparent -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#DA0AD7));
+  background: transparent linear-gradient(90deg, #FFFFFF 0%, #DA0AD7 100%);
+  opacity: 0.1;
+  max-width: 100%;
+  min-width: 300px;
+  position: absolute;
+  z-index: 999;
+  height: 300px;
+  border-radius: 50%;
+  left: 90px;
+  top: -212px;
+}
+
+.navContainer .circleTwo {
+  background: transparent -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#DB0BD7));
+  background: transparent linear-gradient(90deg, #FFFFFF 0%, #DB0BD7 100%);
+  max-width: 100%;
+  min-width: 300px;
+  opacity: 0.1;
+  position: absolute;
+  z-index: 999;
+  height: 300px;
+  border-radius: 50%;
+  left: -140px;
+  top: -150px;
+}
+
+.navContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
+  min-width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.navContainer .container .navBarProfileDetails {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navContainer .container .navBarProfileDetails .imgDiv {
+  width: 60px;
+}
+
+.navContainer .container .navBarProfileDetails .imgDiv img {
+  width: 100%;
+}
+
+.navContainer .container .navBarProfileDetails p {
+  margin-left: 10px;
+}
+
+.navContainer .container .navBarProfileDetails p span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: relative;
+  display: inline-block;
+  color: #FBB03B;
+}
+
+.navContainer .container .navBarProfileDetails p .toggleArrow {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.navContainer .container .rightNavOptions {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navContainer .container .rightNavOptions .icon {
+  position: relative;
+  width: 20px;
+}
+
+.navContainer .container .rightNavOptions .icon:hover {
+  cursor: pointer;
+}
+
+.navContainer .container .rightNavOptions .icon img {
+  height: 20px;
+}
+
+.navContainer .container .rightNavOptions .icon svg {
+  width: 100%;
+}
+
+.navContainer .container .rightNavOptions .icon .count {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background: #FBB03B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -6px;
+  right: -6px;
+  font-size: 10px;
+}
+
+.navContainer .container .rightNavOptions .searchDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #490057;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.navContainer .container .rightNavOptions .searchDiv svg {
+  width: 20px;
+}
+
+.navContainer .container .rightNavOptions .searchDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  margin: 0px 9px;
+  font-size: 16px;
+}
+
+.navContainer .container .rightNavOptions .searchDiv input::-webkit-input-placeholder {
+  color: white;
+}
+
+.navContainer .container .rightNavOptions .searchDiv input:-ms-input-placeholder {
+  color: white;
+}
+
+.navContainer .container .rightNavOptions .searchDiv input::-ms-input-placeholder {
+  color: white;
+}
+
+.navContainer .container .rightNavOptions .searchDiv input::placeholder {
+  color: white;
+}
+
+.navContainer .container .rightNavOptions .logo {
+  width: 60px;
+}
+
+.navContainer .container .rightNavOptions .logo svg {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,845 @@
+.body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: #F3F3F3;
+}
+
+.body .feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.body .feed .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
+  min-width: 85%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .feed .container .left {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+.body .feed .container .left .first {
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.body .feed .container .left .first .firstTitle {
+  color: #490057;
+  text-align: center;
+}
+
+.body .feed .container .left .first .switchOptions {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  border-bottom-left-radius: 10px;
+}
+
+.body .feed .container .left .first .switchOptions .switchOption {
+  background: #B8B8B8;
+  min-width: 115px;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.body .feed .container .left .first .switchOptions .switchOption:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .left .first .switchOptions .one {
+  border-bottom-left-radius: 7px;
+  position: relative;
+}
+
+.body .feed .container .left .first .switchOptions .one span {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FBB03B;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: -5px;
+  top: -10px;
+  font-size: 10px;
+}
+
+.body .feed .container .left .first .switchOptions .two {
+  border-bottom-right-radius: 7px;
+  position: relative;
+}
+
+.body .feed .container .left .first .switchOptions .two span {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FBB03B;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  font-size: 10px;
+}
+
+.body .feed .container .left .first .switchOptions .active {
+  background: #490057;
+}
+
+.body .feed .container .left .feedNav {
+  padding: 10px 15px;
+  background: #490057;
+  color: white;
+  border-radius: 16px;
+  margin-top: 15px;
+}
+
+.body .feed .container .left .feedNav ul li {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .left .feedNav ul li:hover {
+  color: #FBB03B;
+  cursor: pointer;
+}
+
+.body .feed .container .left .feedNav ul li svg {
+  width: 28px;
+}
+
+.body .feed .container .left .feedNav ul li span {
+  margin-left: 15px;
+}
+
+.body .feed .container .left .myPages {
+  margin-top: 35px;
+  background: white;
+  border-radius: 12px;
+  padding-bottom: 25px;
+}
+
+.body .feed .container .left .myPages .header {
+  padding: 15px;
+}
+
+.body .feed .container .left .myPages .header .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .left .myPages .header .titles h3 {
+  color: #490057;
+}
+
+.body .feed .container .left .myPages .header .titles .button {
+  margin-left: auto;
+  background: #490057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  border-radius: 15px;
+  color: white;
+}
+
+.body .feed .container .left .myPages .header .titles .button:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .left .myPages .header .titles .button span {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.body .feed .container .left .myPages .header .search {
+  background: #D5D5D5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.body .feed .container .left .myPages .header .search svg {
+  width: 10px;
+  height: 10px;
+}
+
+.body .feed .container .left .myPages .header .search input {
+  border: none;
+  outline: none;
+  background: none;
+  height: 20px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  margin-left: 10px;
+}
+
+.body .feed .container .left .myPages .pages {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.body .feed .container .left .myPages .pages .page {
+  padding: 5px 10px;
+  background: #F3F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .left .myPages .pages .page .pageName {
+  line-height: 1;
+  margin-left: 10px;
+}
+
+.body .feed .container .left .myPages .pages .page .pageName p {
+  font-size: 15px;
+  color: #490057;
+  font-weight: bold;
+}
+
+.body .feed .container .left .myPages .pages .page .pageName p:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .left .myPages .pages .page .pageName span {
+  font-size: 10px;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons {
+  display: block;
+  margin-left: auto;
+  position: relative;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons svg {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons svg:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons .dropdown {
+  position: absolute;
+  background: white;
+  width: 90px;
+  top: 20px;
+  left: -60px;
+  z-index: 999;
+  -webkit-box-shadow: 0px 4px 8px #00000021;
+          box-shadow: 0px 4px 8px #00000021;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons .dropdown p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2px;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons .dropdown p span {
+  padding-left: 5px;
+}
+
+.body .feed .container .left .myPages .pages .page .actionButtons .dropdown p:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .center {
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.body .feed .container .center .firstSection .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .feed .container .center .firstSection .tabs .tab {
+  -ms-flex-preferred-size: 33.334%;
+      flex-basis: 33.334%;
+  padding: 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+.body .feed .container .center .firstSection .tabs .tab:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .center .firstSection .tabs .tab p {
+  text-align: center;
+  color: #9B9B9B;
+  font-size: 20px;
+}
+
+.body .feed .container .center .firstSection .tabs .active {
+  border-bottom: 4px solid #490057;
+}
+
+.body .feed .container .center .firstSection .tabs .active p {
+  color: #490057;
+  font-weight: bold;
+}
+
+.body .feed .container .center .firstSection .tabView {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px;
+  background: #9400B11C;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails .img {
+  width: 125px;
+  height: 125px;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails .img img {
+  width: 100%;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails .profileParagraps {
+  margin-left: auto;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails .profileParagraps h1 {
+  font-size: 40px;
+  color: #490057;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails .profileParagraps p {
+  color: #787878;
+  font-size: 20px;
+}
+
+.body .feed .container .center .firstSection .tabView .profileDetails .profileParagraps p.bio {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats .count .countDiv h3 {
+  font-size: 18px;
+  color: #490057;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats .count .countDiv p {
+  font-size: 10px;
+  text-align: center;
+  color: #787878;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats .button {
+  background: #490057;
+  color: white;
+  text-align: center;
+  width: 120px;
+  padding: 8px 20px;
+  border-radius: 16px;
+  margin-top: 15px;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats .button p {
+  font-size: 10px;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats ul h4 {
+  font-size: 10px;
+  color: #490057;
+}
+
+.body .feed .container .center .firstSection .tabView .profileStats ul li {
+  font-size: 10px;
+  color: #490057;
+}
+
+.body .feed .container .center .newPost {
+  padding: 30px;
+  background: white;
+  margin-top: 20px;
+}
+
+.body .feed .container .center .newPost .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .center .newPost .top input {
+  width: 85%;
+  padding: 12px 25px;
+  border-radius: 16px;
+  border: 1px solid black;
+  color: #490057;
+}
+
+.body .feed .container .center .newPost .top input::-webkit-input-placeholder {
+  color: #490057;
+  font-weight: bold;
+}
+
+.body .feed .container .center .newPost .top input:-ms-input-placeholder {
+  color: #490057;
+  font-weight: bold;
+}
+
+.body .feed .container .center .newPost .top input::-ms-input-placeholder {
+  color: #490057;
+  font-weight: bold;
+}
+
+.body .feed .container .center .newPost .top input::placeholder {
+  color: #490057;
+  font-weight: bold;
+}
+
+.body .feed .container .center .newPost .top input:focus, .body .feed .container .center .newPost .top input :focus-within {
+  border: 1px solid #490057;
+  outline: 2px solid #490057;
+}
+
+.body .feed .container .center .newPost .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.body .feed .container .center .newPost .bottom .postOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .center .newPost .bottom .postOptions span {
+  margin-left: 8px;
+}
+
+.body .feed .container .center .posts {
+  margin-top: 25px;
+}
+
+.body .feed .container .center .posts .post {
+  position: relative;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .feed .container .center .posts .post .postImage {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.body .feed .container .center .posts .post .postDetails {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.body .feed .container .center .posts .post .postDetails .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .center .posts .post .postDetails .top .right {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.body .feed .container .center .posts .post .postDetails .top .right .rightBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .feed .container .center .posts .post .postDetails .top .right .rightBottom p {
+  font-size: 11px;
+}
+
+.body .feed .container .center .posts .post .postDetails .postText {
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  margin-left: auto;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section h6 {
+  color: #787878;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section .sectionTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section .sectionTop .sectionRight {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  margin-left: auto;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section .sectionTop .sectionRight h6 {
+  font-size: 16px;
+  color: #490057;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section .sectionTop .sectionRight p {
+  font-size: 10px;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section .sectionTop .sectionRight .sectionPostText {
+  margin-top: 10px;
+}
+
+.body .feed .container .center .posts .post .postDetails .commentSection .section .sectionTop .sectionRight .sectionPostText p {
+  font-size: 12px;
+}
+
+.body .feed .container .center .posts .post .postDetails .postActions {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.body .feed .container .center .posts .post .postDetails .postActions .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .feed .container .center .posts .post .postDetails .postActions .left svg {
+  margin-left: 0 !important;
+}
+
+.body .feed .container .center .posts .post .postDetails .postActions svg {
+  margin-left: auto;
+}
+
+.body .feed .container .right {
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
+}
+
+.body .feed .container .right h3 {
+  color: #490057;
+}
+
+.body .feed .container .right .listings {
+  background: #E8D8EC;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.body .feed .container .right .listings .listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.body .feed .container .right .listings .listing .orderDetails {
+  -ms-flex-preferred-size: 78%;
+      flex-basis: 78%;
+  margin-left: auto;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .top .button {
+  margin-left: auto;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .top .button:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .top .details p {
+  font-size: 10px;
+  color: #787878;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .bottom {
+  font-size: 10px;
+  color: #787878;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 5px;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .bottom .loadingDiv {
+  background: #9B9B9B3B;
+  width: 100%;
+  height: 10px;
+  border-radius: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .feed .container .right .listings .listing .orderDetails .bottom .loadingDiv .loading {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  background: #FBB03B;
+  border-radius: 135px;
+}
+
+.body .feed .container .right .suggestions {
+  margin-top: 35px;
+}
+
+.body .feed .container .right .suggestions .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .feed .container .right .suggestions .tabs div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border-bottom: 1px solid black;
+  padding: 5px 0px;
+}
+
+.body .feed .container .right .suggestions .tabs div:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .right .suggestions .tabs div p {
+  font-size: 14px;
+  color: #490057;
+}
+
+.body .feed .container .right .suggestions .tabs .suggestedPages p {
+  text-align: right;
+}
+
+.body .feed .container .right .suggestions .tabs .active {
+  border-bottom: 4px solid #490057 !important;
+}
+
+.body .feed .container .right .suggestions .tabs .active p {
+  font-weight: bold;
+}
+
+.body .feed .container .right .suggestions .tabView .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.body .feed .container .right .suggestions .tabView .page div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .feed .container .right .suggestions .tabView .page div .img {
+  width: 47px;
+  height: 47px;
+  margin-right: 10px;
+}
+
+.body .feed .container .right .suggestions .tabView .page div div {
+  display: block;
+}
+
+.body .feed .container .right .suggestions .tabView .page div div h4 {
+  font-size: 14px;
+}
+
+.body .feed .container .right .suggestions .tabView .page div div p {
+  font-size: 10px;
+}
+
+.body .feed .container .right .suggestions .tabView .page .left {
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+}
+
+.body .feed .container .right .suggestions .tabView .page .right {
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+}
+
+.body .feed .container .right .suggestions .tabView .page .right .button:hover {
+  cursor: pointer;
+}
+
+.body .feed .container .right .suggestions .tabView .page .right svg:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .container {
+    max-width: 95% !important;
+    min-width: 95% !important;
+  }
+  .profileDetails .img {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=meeney.css.map */
